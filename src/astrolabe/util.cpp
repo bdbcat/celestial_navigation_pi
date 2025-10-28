@@ -26,6 +26,7 @@
 #include <fstream>
 #include <list>
 #include <sstream>
+#include <string>
 
 #include <string.h>
 
@@ -259,9 +260,10 @@ string astrolabe::util::int_to_string(int i) {
       string representation
 
   */
-  ostringstream ost;
-  ost << i;
-  return ost.str();
+  //ostringstream ost;
+  //ost << i;
+  //return ost.str();
+  return std::to_string(i);
 }
 
 double astrolabe::util::interpolate3(double n, const vector<double>& y) {
